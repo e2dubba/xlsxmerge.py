@@ -32,10 +32,12 @@ def write_rows(filename):
                     col = headings[col_names[x]]
                         
                 worksheet.write(row, col, values[x])
+                
 
 def add_headings(col_name):
    headings[col_name] = len(headings)
    worksheet.write(0, headings[col_name], col_name)
+   
 
 for files in additional_files:
     print('Opening file ' + files)

@@ -8,7 +8,7 @@ Place the file `xlsxmerge.py` in your `$PATH`, and change the permission of the 
 
 ## Using xlsxmerge.py
 
-To merge `file-1.xlsx` and `file-2.xlsx` run:
+To merge `file-1.xlsx`, `file-2.xlsx`, etc run:
 
     $ xlsxmerge.py file-1.xlsx file-2.xlxs [... file-n.xlsx] 
 

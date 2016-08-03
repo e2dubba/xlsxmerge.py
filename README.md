@@ -4,7 +4,7 @@ Merges Excell Sheets and Workbooks into one Excell Sheet
 This project was designed for a specific use case, but by design it is flexible. Any other uses would require some tweaking of the code, but not much. 
 ## Installing 
 
-`xlsxmerge.py` requires Python 3+ and the `lxml` libraries, that can be installed with `pip`.
+`xlsxmerge.py` requires Python 3+ and the `xlrd` and `xlsxwrite` modules, that can be installed with `pip`.
 
 ## Using xlsxmerge.py
 

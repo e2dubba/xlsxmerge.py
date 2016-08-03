@@ -5,7 +5,7 @@ import xlsxwriter
 import sys
 
 
-workbook = xlsxwriter.Workbook('MergeTest.xlsx')
+workbook = xlsxwriter.Workbook(sys.argv.pop())
 worksheet = workbook.add_worksheet()
 
 master_file = xlrd.open_workbook(sys.argv[1])
@@ -30,14 +30,14 @@ def write_rows(filename):
                 except KeyError:
                     add_headings(col_names[x])
                     col = headings[col_names[x]]
-                        
+
                 worksheet.write(row, col, values[x])
-                
+
 
 def add_headings(col_name):
    headings[col_name] = len(headings)
    worksheet.write(0, headings[col_name], col_name)
-   
+
 
 for files in additional_files:
     print('Opening file ' + files)

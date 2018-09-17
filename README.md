@@ -1,5 +1,5 @@
 # xlsxmerge.py
-Merges Excell Sheets and Workbooks into one Excell Sheet
+Merges Excell Sheets and Workbooks into one Excel Sheet
 
 This project was designed for a specific use case, but by design it is
 flexible. Any other uses would require some tweaking of the code, but
